@@ -10,6 +10,10 @@ class Caster:
             ray = Ray(0, 0)
             ray.set_angle(math.radians(i))
             self.rays.append(ray)
+
+    def set_angle(self, angle):
+        for i, ray in enumerate(self.rays):
+            ray.set_angle(math.radians(angle+i))
     
     def set_pos(self, x, y):
         for ray in self.rays:
@@ -17,7 +21,7 @@ class Caster:
             ray.position.y = y
     
     def draw(self, surface, bounds):
-        for ray in self.rays:
+        for i, ray in enumerate(self.rays):
             nearest = None
             for b in bounds:
                 b.draw(surface)

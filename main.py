@@ -1,9 +1,7 @@
 import pygame
 import settings
 from boundary import Boundary
-from ray import Ray
-from vector import Vector
-from caster import Caster
+from player import Player
 
 def main():
 
@@ -19,7 +17,7 @@ def main():
         Boundary(700, 301, 100, 100)
     ]
 
-    caster = Caster(360)
+    player = Player()
 
     while run:
         clock.tick(settings.FPS)
@@ -28,11 +26,11 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
+        player.update()
+
         window.fill(settings.BG_COLOR)
 
-        x, y = pygame.mouse.get_pos()
-        caster.set_pos(x, y)
-        caster.draw(window, bounds)
+        player.caster.draw(window, bounds)
 
         pygame.display.update()
 
