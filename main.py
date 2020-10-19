@@ -13,10 +13,10 @@ def main():
     run = True
 
     bounds = [
-        Boundary(500, 300, 500, 500),
-        Boundary(700, 300, 850, 500),
+        Boundary(500, 310, 500, 500),
+        Boundary(700, 500, 850, 500),
         Boundary(700, 300, 0, 500),
-        Boundary(700, 300, 100, 10)
+        Boundary(700, 301, 100, 100)
     ]
 
     caster = Caster(360)
