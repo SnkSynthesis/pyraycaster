@@ -12,7 +12,7 @@ class Vector:
         return int(math.sqrt(self.x**2 + self.y**2))
 
     def __add__(self, other):
-        return Vector(self.x + other.x, self.y += other.y)
+        return Vector(self.x + other.x, self.y + other.y)
     
     def __truediv__(self, other):
         return Vector(self.x / other, self.y / other)
