@@ -1,8 +1,6 @@
 import pygame
 import settings
 from boundary import Boundary
-from ray import Ray
-from vector import Vector
 from caster import Caster
 
 def main():
