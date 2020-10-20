@@ -1,6 +1,5 @@
 import pygame
 import settings
-from boundary import Boundary
 from vector import Vector
 import math
 
