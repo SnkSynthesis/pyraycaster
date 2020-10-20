@@ -6,7 +6,7 @@ Raycaster built with Python
 1. Switch to desired branch:
 
 * `git switch main` for 2D
-* `git switch 3D` for 3D __WIP__ (Sorry! Though you can still check it out)
+* `git switch 3D` for 3D __Work In Progress__ (Sorry! Though you can still check it out)
 
 1. Install dependencies:
 
