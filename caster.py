@@ -1,6 +1,7 @@
 from ray import Ray
 import math
 import settings
+import pygame
 
 class Caster:
     
@@ -24,11 +25,18 @@ class Caster:
         for i, ray in enumerate(self.rays):
             nearest = None
             for b in bounds:
-                b.draw(surface)
                 point = ray.cast(b)
                 if nearest is None:
                     nearest = point
                 if point:
                     if ray.position.distance(point) < ray.position.distance(nearest):
                         nearest = point
-            ray.draw(surface, point=nearest)
+            if nearest:
+                w = settings.DISPLAY[0] / settings.RAYS
+                dist = ray.position.distance(nearest)
+                if dist == 0:
+                    dist = 1
+                h = (settings.HEIGHT * settings.DISPLAY[1]) / dist
+                if h > settings.DISPLAY[1]:
+                    h = settings.DISPLAY[1]
+                pygame.draw.rect(surface, (255, 255, 255), (i*w, settings.DISPLAY[1]/2, w, h))
