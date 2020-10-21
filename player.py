@@ -22,9 +22,9 @@ class Player:
         if keys[pygame.K_DOWN]:
             self.position -= self.caster.rays[(len(self.caster.rays)-1)//2].direction*5
         if keys[pygame.K_RIGHT]:
-            self.angle += 100
+            self.angle += 5
         if keys[pygame.K_LEFT]:
-            self.angle -= 100
+            self.angle -= 5
         
-        self.set_angle(math.radians(self.angle))
+        self.set_angle(self.angle)
         self.caster.set_pos(self.position.x, self.position.y)
