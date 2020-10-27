@@ -15,6 +15,9 @@ class Player:
     def set_angle(self, angle):
         self.caster.set_angle(angle)
 
+    def draw(self, surface, bounds):
+        self.caster.draw(surface, bounds)
+
     def update(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_UP]:

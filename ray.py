@@ -19,12 +19,12 @@ class Ray:
         self.direction.x = math.cos(angle)
         self.direction.y = math.sin(angle)
 
-    def cast(self, boundary):
+    def cast(self, a, b):
         
-        x1 = boundary.a.x
-        y1 = boundary.a.y
-        x2 = boundary.b.x
-        y2 = boundary.b.y
+        x1 = a.x
+        y1 = a.y
+        x2 = b.x
+        y2 = b.y
 
         x3 = self.position.x
         y3 = self.position.y
