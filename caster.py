@@ -34,15 +34,16 @@ class Caster:
                 points.append(ray.cast(b.b, b.c))
                 points.append(ray.cast(b.c, b.d))
                 points.append(ray.cast(b.d, b.a))
-                # b.draw(surface)
+                b.draw(surface)
                 for point in points:
                     if point:
                         if nearest is None:
                             nearest = point
                         if ray.position.distance(point) < ray.position.distance(nearest):
                             nearest = point
+            ray.draw(surface, point=nearest)
             if nearest:
-                width = settings.DISPLAY[0] / settings.RAYS
+                width = (settings.DISPLAY[0] / settings.RAYS) - 1
                 dist = ray.position.distance(nearest)
                 if dist == 0:
                     dist = 1
@@ -55,4 +56,4 @@ class Caster:
                     height = settings.DISPLAY[1]
                     
                 offset = settings.DISPLAY[1]/2 - height / 2
-                pygame.draw.rect(surface, color, (i*width, offset, width, height))
+                # pygame.draw.rect(surface, color, (i*width, offset, width, height))
