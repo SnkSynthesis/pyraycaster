@@ -6,9 +6,11 @@ import math
 
 
 class Ray:
-    def __init__(self, x, y):
+    def __init__(self, x, y, color=settings.RAY_COLOR):
         self.position = Vector(x, y)
         self.direction = Vector(1, 0)
+        self.color = color
+        self.angle = 0
 
     def look_at(self, x, y):
         self.direction.x = x - self.position.x
@@ -16,6 +18,7 @@ class Ray:
         self.direction.normalize()
 
     def set_angle(self, angle):
+        self.angle = angle
         self.direction.x = math.cos(angle)
         self.direction.y = math.sin(angle)
 
@@ -48,7 +51,7 @@ class Ray:
         if point:
             pygame.draw.line(
                 surface,
-                settings.RAY_COLOR,
+                self.color,
                 (self.position.x, self.position.y),
                 (point.x, point.y),
             )

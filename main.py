@@ -6,7 +6,7 @@ from player import Player
 
 def main():
 
-    window = pygame.display.set_mode(settings.DISPLAY)
+    window = pygame.display.set_mode(settings.REAL_DISPLAY)
     pygame.display.set_caption(settings.TITLE)
     clock = pygame.time.Clock()
     run = True
