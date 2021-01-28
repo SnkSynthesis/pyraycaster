@@ -7,8 +7,8 @@ import pygame
 
 class Player:
     def __init__(self):
-        self.position = Vector(500, 500)
-        self.angle = 500
+        self.position = Vector(600, 600)
+        self.angle = 1000
         self.caster = Caster(settings.RAYS)
         self.caster.set_angle(self.angle)
 
