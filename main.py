@@ -3,6 +3,7 @@ import settings
 from boundary import Boundary
 from player import Player
 
+
 def main():
 
     window = pygame.display.set_mode(settings.DISPLAY)
@@ -13,13 +14,13 @@ def main():
     bounds = [
         Boundary(500, 120),
         Boundary(300, 300),
-        Boundary(300, 300+settings.WIDTH),
-        Boundary(300, 300+settings.WIDTH*2),
-        Boundary(300, 300+settings.WIDTH*3),
+        Boundary(300, 300 + settings.WIDTH),
+        Boundary(300, 300 + settings.WIDTH * 2),
+        Boundary(300, 300 + settings.WIDTH * 3),
         Boundary(140, 130),
         Boundary(341, 630),
         Boundary(749, 135),
-        Boundary(234, 347)
+        Boundary(234, 347),
     ]
 
     player = Player()
@@ -39,6 +40,7 @@ def main():
 
         pygame.display.update()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
     pygame.quit()
