@@ -1,4 +1,4 @@
-DISPLAY = (850, 850)
+DISPLAY = (650, 650)
 TITLE = "Python Raycaster!"
 BG_COLOR = (0, 0, 0)
 BOUNDARY_COLOR = (255, 255, 255)
