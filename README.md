@@ -5,14 +5,12 @@ Raycaster built with Python
 
 1. Switch to desired branch:
 
-* `git switch main` for 2D
-* `git switch 3D` for 3D __Work In Progress__ (Sorry! Though you can still check it out)
+* `git switch main` for 2D Raycaster
+* `git switch 3D` for 3D Raycaster
 
 1. Install dependencies:
 
 `pip install -r requirements.txt`
-
-1. __OPTIONAL__: Edit `settings.py` to have optimal settings e.g. `DISPLAY=(500, 500)` (Makes 500px x 500px window)
 
 1. Run the project:
 
