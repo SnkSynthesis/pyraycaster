@@ -2,20 +2,20 @@ from ray import Ray
 import math
 import settings
 
+
 class Caster:
-    
     def __init__(self, rays_amt):
         self.rays = []
         for i in range(rays_amt):
             ray = Ray(0, 0)
             ray.set_angle(math.radians(i))
             self.rays.append(ray)
-    
+
     def set_pos(self, x, y):
         for ray in self.rays:
             ray.position.x = x
             ray.position.y = y
-    
+
     def draw(self, surface, bounds):
         for ray in self.rays:
             nearest = None

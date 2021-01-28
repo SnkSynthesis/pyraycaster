@@ -3,13 +3,13 @@ import settings
 from vector import Vector
 import math
 
-class Ray:
 
+class Ray:
     def __init__(self, x, y):
         self.position = Vector(x, y)
         self.direction = Vector(1, 0)
 
-    def look_at(self, x ,y):
+    def look_at(self, x, y):
         self.direction.x = x - self.position.x
         self.direction.y = y - self.position.y
         self.direction.normalize()
@@ -19,7 +19,7 @@ class Ray:
         self.direction.y = math.sin(angle)
 
     def cast(self, boundary):
-        
+
         x1 = boundary.a.x
         y1 = boundary.a.y
         x2 = boundary.b.x
@@ -43,20 +43,22 @@ class Ray:
         else:
             return None
 
-
-
     def draw(self, surface, point=None):
         if point:
             pygame.draw.line(
-                surface, settings.RAY_COLOR, (self.position.x, self.position.y), 
+                surface,
+                settings.RAY_COLOR,
+                (self.position.x, self.position.y),
                 (point.x, point.y),
             )
         else:
             screen_vec = Vector(settings.DISPLAY[0], settings.DISPLAY[1])
             pygame.draw.line(
-                surface, settings.RAY_COLOR, (self.position.x, self.position.y), 
+                surface,
+                settings.RAY_COLOR,
+                (self.position.x, self.position.y),
                 (
-                    self.position.x+self.direction.x*len(screen_vec),
-                    self.position.y+self.direction.y*len(screen_vec),
+                    self.position.x + self.direction.x * len(screen_vec),
+                    self.position.y + self.direction.y * len(screen_vec),
                 ),
             )

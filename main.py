@@ -3,6 +3,7 @@ import settings
 from boundary import Boundary
 from caster import Caster
 
+
 def main():
 
     window = pygame.display.set_mode(settings.DISPLAY)
@@ -14,7 +15,7 @@ def main():
         Boundary(500, 310, 500, 500),
         Boundary(700, 500, 850, 500),
         Boundary(700, 300, 0, 500),
-        Boundary(700, 301, 100, 100)
+        Boundary(700, 301, 100, 100),
     ]
 
     caster = Caster(360)
@@ -34,6 +35,7 @@ def main():
 
         pygame.display.update()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
     pygame.quit()
