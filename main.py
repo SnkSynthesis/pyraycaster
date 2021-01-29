@@ -3,6 +3,19 @@ import settings
 from boundary import Boundary
 from player import Player
 
+def load_map(path):
+    bounds = []
+    with open(path) as f:
+        y = 0
+        x = 0
+        for line in f:
+            y += settings.WIDTH - 1
+            x = 0
+            for char in line:
+                if char == 'W':
+                    bounds.append(Boundary(x, y))
+                x += settings.WIDTH - 1
+    return bounds
 
 def main():
 
@@ -11,17 +24,7 @@ def main():
     clock = pygame.time.Clock()
     run = True
 
-    bounds = [
-        Boundary(500, 140),
-        Boundary(400, 300),
-        Boundary(310, 300 + settings.WIDTH),
-        Boundary(320, 330 + settings.WIDTH * 2),
-        Boundary(320, 300 + settings.WIDTH * 3),
-        Boundary(300, 130),
-        Boundary(341, 630),
-        Boundary(749, 135),
-        Boundary(234, 347),
-    ]
+    bounds = load_map('map.txt')
 
     player = Player()
 
