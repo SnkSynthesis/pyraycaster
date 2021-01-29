@@ -36,7 +36,7 @@ class Caster:
                 points.append(ray.cast(b.b, b.c))
                 points.append(ray.cast(b.c, b.d))
                 points.append(ray.cast(b.d, b.a))
-
+                # b.draw(surface)
                 for point in points:
                     if point:
                         if nearest is None:

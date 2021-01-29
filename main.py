@@ -12,12 +12,12 @@ def main():
     run = True
 
     bounds = [
-        Boundary(500, 120),
-        Boundary(300, 300),
-        Boundary(300, 300 + settings.WIDTH),
-        Boundary(300, 300 + settings.WIDTH * 2),
-        Boundary(300, 300 + settings.WIDTH * 3),
-        Boundary(140, 130),
+        Boundary(500, 140),
+        Boundary(400, 300),
+        Boundary(310, 300 + settings.WIDTH),
+        Boundary(320, 330 + settings.WIDTH * 2),
+        Boundary(320, 300 + settings.WIDTH * 3),
+        Boundary(300, 130),
         Boundary(341, 630),
         Boundary(749, 135),
         Boundary(234, 347),

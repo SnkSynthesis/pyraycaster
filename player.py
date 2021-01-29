@@ -20,17 +20,17 @@ class Player:
 
     def update(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_UP] or keys[pygame.K_w]:
             self.position += (
                 self.caster.rays[(len(self.caster.rays) - 1) // 2].direction * 5
             )
-        if keys[pygame.K_DOWN]:
+        if keys[pygame.K_DOWN] or keys[pygame.K_s]:
             self.position -= (
                 self.caster.rays[(len(self.caster.rays) - 1) // 2].direction * 5
             )
-        if keys[pygame.K_RIGHT]:
+        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
             self.angle += 5
-        if keys[pygame.K_LEFT]:
+        if keys[pygame.K_LEFT] or keys[pygame.K_a]:
             self.angle -= 5
 
         self.set_angle(self.angle)

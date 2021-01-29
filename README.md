@@ -15,3 +15,8 @@ Raycaster built with Python
 1. Run the project:
 
 `python main.py`
+
+# How to play
+
+* W & S or Up Arrow & Down Arrow to move forward and backward
+* A & D or Right Arrow & Left Arrow to look around
