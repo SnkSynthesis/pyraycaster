@@ -1,6 +1,5 @@
-from ray import Ray
+from .ray import Ray
 import math
-import settings
 
 
 class Caster:

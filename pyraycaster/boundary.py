@@ -1,6 +1,6 @@
 import pygame
-import settings
-from vector import Vector
+from . import settings
+from .vector import Vector
 
 
 class Boundary:

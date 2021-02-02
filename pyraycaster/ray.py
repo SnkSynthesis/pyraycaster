@@ -1,6 +1,6 @@
 import pygame
-import settings
-from vector import Vector
+from . import settings
+from .vector import Vector
 import math
 
 
@@ -19,7 +19,6 @@ class Ray:
         self.direction.y = math.sin(angle)
 
     def cast(self, boundary):
-
         x1 = boundary.a.x
         y1 = boundary.a.y
         x2 = boundary.b.x
