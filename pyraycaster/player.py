@@ -1,7 +1,6 @@
-from vector import Vector
-from caster import Caster
-import math
-import settings
+from .vector import Vector
+from .caster import Caster
+from . import settings
 import pygame
 
 

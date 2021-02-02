@@ -14,7 +14,7 @@ Raycaster built with Python
 
 1. Run the project:
 
-`python main.py`
+`python -m pyraycaster`
 
 # How to play
 

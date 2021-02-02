@@ -1,8 +1,8 @@
-from ray import Ray
+from .ray import Ray
 import math
-import settings
+from . import settings
 import pygame
-from vector import Vector
+from .vector import Vector
 
 
 class Caster:

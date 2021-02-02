@@ -9,10 +9,6 @@ class Vector:
     def distance(self, other):
         return len(Vector(self.x - other.x, self.y - other.y))
 
-    def __iter__(self):
-        yield self.x
-        yield self.y
-
     def __len__(self):
         return int(math.sqrt(self.x ** 2 + self.y ** 2))
 

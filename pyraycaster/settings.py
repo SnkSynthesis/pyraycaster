@@ -1,5 +1,3 @@
-import math
-
 REAL_DISPLAY = (650, 650)
 DISPLAY = (750, 750)
 TITLE = "Python Raycaster!"
