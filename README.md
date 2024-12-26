@@ -1,5 +1,9 @@
 # pyraycaster
-Raycaster built with Python
+Raycaster built with Python.
+
+<img src="gallery/2d_raycaster.png" width="75%" height="75%">
+<img src="gallery/3d_raycaster.png" width="75%" height="75%">
+
 
 # How to run
 
@@ -16,6 +20,7 @@ Raycaster built with Python
 
 `python -m pyraycaster`
 
-# How to use
+# How to play
 
-* Move mouse around to move the rays
+* W & S or Up Arrow & Down Arrow to move forward and backward
+* A & D or Right Arrow & Left Arrow to look around
