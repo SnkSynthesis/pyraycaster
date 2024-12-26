@@ -1,8 +1,5 @@
 # pyraycaster
-Raycaster built with Python.
-
-<img src="gallery/2d_raycaster.png" width="75%" height="75%">
-<img src="gallery/3d_raycaster.png" width="75%" height="75%">
+Raycaster built with Python. See [Gallery](#gallery) for images.
 
 
 # How to run
@@ -24,3 +21,7 @@ Raycaster built with Python.
 
 * W & S or Up Arrow & Down Arrow to move forward and backward
 * A & D or Right Arrow & Left Arrow to look around
+
+# Gallery
+<img src="gallery/2d_raycaster.png" width="50%" height="50%">
+<img src="gallery/3d_raycaster.png" width="50%" height="50%">
