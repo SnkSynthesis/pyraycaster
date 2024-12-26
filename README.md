@@ -1,5 +1,9 @@
 # pyraycaster
-Raycaster built with Python
+Raycaster built with Python.
+
+<img src="gallery/2d_raycaster.png" width="75%" height="75%">
+<img src="gallery/3d_raycaster.png" width="75%" height="75%">
+
 
 # How to run
 
