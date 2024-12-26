@@ -6,8 +6,8 @@ Raycaster built with Python. See [Gallery](#gallery) for images.
 
 1. Switch to desired branch:
 
-* `git switch main` for 2D Raycaster
-* `git switch 3D` for 3D Raycaster
+* `git switch main` for [2D Raycaster](https://github.com/SnkSynthesis/pyraycaster)
+* `git switch 3D` for [3D Raycaster](https://github.com/SnkSynthesis/pyraycaster/tree/3D)
 
 1. Install dependencies:
 
